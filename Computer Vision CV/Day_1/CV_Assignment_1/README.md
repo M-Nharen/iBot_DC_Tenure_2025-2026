@@ -1,4 +1,4 @@
-#Image to Pencil Sketch Converter
+IMAGE TO PENCIL SKETCH CONVERTER
 
 This is a Python script used to convert images in any format (supported by cv2's imread) to a pencil sketch either in color format or grayscale
 
