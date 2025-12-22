@@ -1,8 +1,8 @@
-IMAGE TO PENCIL SKETCH CONVERTER
+# Image to Pencil Sketch Converter
 
 This is a Python script used to convert images in any format (supported by cv2's imread) to a pencil sketch either in color format or grayscale
 
-Overview:
+## Overview:
 
 This directory contains all the necessary steps to setup and run the pencil_sketch.py program
 
@@ -28,7 +28,7 @@ CV_Assignment_1/
 └── setup.sh
 ```
 
-Setup:
+## Setup:
 
 The program requires the following libraries:
 
@@ -55,7 +55,7 @@ If tkinter is not downloaded on your computer run the following command:
 sudo apt install python3-tk
 ```
 
-Usage:
+## Usage:
 
 To start the program run
 
@@ -71,20 +71,14 @@ python3 pencil_sketch.py
 5. Click the file destination and name the output file
 ```
 
-Testing:
+## Testing:
 
-```
 3 test images and their outputs are provided. You can either use those or use your own
-```
 
-License:
+## License:
 
-```
 This project is released under the MIT License — see LICENSE for details.
-```
 
-Author:
+## Author:
 
-```
 Developed by M Nharen
-```
