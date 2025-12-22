@@ -12,17 +12,17 @@ Directory  Structure
 CV_Assignment_1/
 ├── output_sketches
 |    ├── Color
-|    |    ├── Distinct Edges.png
-|    |    ├── Landscape.png
-|    |    ├── Portrait.png
+|    |   ├── Distinct Edges.png
+|    |   ├── Landscape.png
+|    |   └── Portrait.png
 |    ├── Gray
-|    |    ├── Distinct Edges.png
-|    |    ├── Landscape.png
-|    |    ├── Portrait.png 
+|    |   ├── Distinct Edges.png
+|    |   ├── Landscape.png
+|    |   └── Portrait.png 
 ├── test_images
 |    ├── Distinct Edges.jpg
 |    ├── Landscape.jpg
-|    ├── Portrait.jpeg
+|    └── Portrait.jpeg
 ├── pencil_sketch.py
 ├── README.md
 └── setup.sh
