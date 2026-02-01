@@ -30,31 +30,44 @@ iBot_DC_Tenure_2025-2026/
 |  |  |   └── Image_Processing_Pipeline.py
 |  |  └── Day_1_Task_2/
 |  |      └── Pixel Histogram Analysis.py
-|  └─ Day_2/
-|     ├── CV_Assignment_2/
-|     |   ├── results/
-|     |   |    ├── result1.jpg
-|     |   |    ├── result2.jpg
-|     |   |    └── result3.jpeg
-|     |   ├── test/
-|     |   |    ├── test1.jpg
-|     |   |    ├── test2.jpg
-|     |   |    └── test3.jpeg
-|     |   ├── circle_detector.py
-|     |   └── README.md
-|     ├── Day_2_Task_1/
-|     |    ├── output/
-|     |    |   ├── flip_horizontal.png
-|     |    |   ├── flip_vertical.png
-|     |    |   ├── noisy.png
-|     |    |   ├── rotated.png
-|     |    |   └── zoomed.png
-|     |    ├── Day_2_Task_1.py
-|     |    └── Distinct Edges.jpg
-|     └── Day_2_Task_2/
-|         ├── Day_2_Task_2.py
-|         ├── pic_1.jpg
-|         └── pic_2.jpg
+|  ├── Day_2/
+|  |   ├── CV_Assignment_2/
+|  |   |   ├── results/
+|  |   |   |    ├── result1.jpg
+|  |   |   |    ├── result2.jpg
+|  |   |   |    └── result3.jpeg
+|  |   |   ├── test/
+|  |   |   |    ├── test1.jpg
+|  |   |   |    ├── test1.jpg
+|  |   |   |    ├── test1.jpg
+|  |   |   |    ├── test1.jpg
+|  |   |   |    ├── test1.jpg
+|  |   |   |    ├── test2.jpg
+|  |   |   |    └── test3.jpeg
+|  |   |   ├── circle_detector.py
+|  |   |   └── README.md
+|  |   ├── Day_2_Task_1/
+|  |   |    ├── output/
+|  |   |    |   ├── flip_horizontal.png
+|  |   |    |   ├── flip_vertical.png
+|  |   |    |   ├── flip_vertical.png
+|  |   |    |   ├── noisy.png
+|  |   |    |   ├── rotated.png
+|  |   |    |   └── zoomed.png
+|  |   |    ├── Day_2_Task_1.py
+|  |   |    └── Distinct Edges.jpg
+|  |   └── Day_2_Task_2/
+|  |       ├── Day_2_Task_2.py
+|  |       ├── pic_1.jpg
+|  |       └── pic_2.jpg
+|  └── Day_3/
+|      └── CV_Assignment_3/
+|          ├── best_model.pth
+|          ├── confusion_matrix.png
+|          ├── evaluate.py
+|          ├── README.md
+|          ├── train.py
+|          └── training_curves.png
 ├── License
 └── README.md
 ```
