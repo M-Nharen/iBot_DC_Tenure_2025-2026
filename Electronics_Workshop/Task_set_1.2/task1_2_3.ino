@@ -16,7 +16,7 @@ void setup()
   Display.setTextColor(WHITE);
 
   Display.setCursor(4, 28); 
-  Display.print(F("HELLO WORLD:"));
+  Display.print(F("HELLO WORLD "));
 
   Display.drawRect(80, 17, 40, 30, WHITE); 
 
