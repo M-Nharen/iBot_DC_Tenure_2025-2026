@@ -11,6 +11,8 @@ int h = 64;
 long seconds_passed = 0;
 unsigned long start_millis = 0;
 bool correct_password = false;
+int kill_button = 8;
+int kill_state = true;
 int button1 = 5;
 int button1_state =0;
 int button1_last =0;
@@ -39,6 +41,7 @@ void setup()
   pinMode(button3, INPUT);
   pinMode(button4, INPUT);
   pinMode(check_button,INPUT);
+  pinMode(kill_button,INPUT);
   Serial.begin(9600);
   Wire.begin();
 
@@ -58,6 +61,13 @@ void setup()
 
 void loop()
 {
+  kill_state = digitalRead(kill_button);
+  if (kill_state == false){
+    Serial.println("killled");
+    Display.clearDisplay();
+    Display.display();
+    while(true);
+  }
   int reading = digitalRead(6);
   Serial.println(reading);
   if (reading == 1)
@@ -96,6 +106,7 @@ void loop()
         Display.print(entered);
         Display.display();
       }
+      //delay(debounce);
       else if(button2_state ==0 && button2_last ==1)
       {
         Serial.println("button2 pressed");
@@ -108,6 +119,7 @@ void loop()
         Display.print(entered);
         Display.display();
       }
+      //delay(debounce);
       else if (button3_state==0 && button3_last==1)
       {
         Serial.println("button3 pressed");
@@ -120,6 +132,7 @@ void loop()
         Display.print(entered);
         Display.display();
       }
+      //delay(debounce);
       else if(button4_state ==0 && button4_last ==1)
       {
         Serial.println("button4 pressed");
@@ -135,6 +148,7 @@ void loop()
       else if(check_button_state ==0 && check_button_last ==1)
       {
         Serial.println("checking the value");
+        //entered += 10;
         if(password == entered){
           Serial.println("correct");
           Display.clearDisplay();
@@ -142,6 +156,13 @@ void loop()
           Display.print(F("Correct Password"));
           Display.display();
           correct_password = true;
+          kill_state = digitalRead(kill_button);
+          if (kill_state == true){
+            Display.clearDisplay();
+            Display.display();
+            while(true);
+            Serial.println("killled");
+          }
           break;
         }
         else{
@@ -153,6 +174,15 @@ void loop()
           while (true)
           {
             tone(buzzer,1000);
+            kill_state = digitalRead(kill_button);
+        if (kill_state == false){
+          Display.clearDisplay();
+          Serial.println("killled");
+          Display.clearDisplay();
+          Display.display();
+          noTone(buzzer);
+        while(true);
+      }
           }
         }
         entered = 0;
@@ -177,6 +207,14 @@ void loop()
       while (true)
       {
         tone(buzzer,1000);
+        kill_state = digitalRead(kill_button);
+
+        if (kill_state == false){
+          Display.clearDisplay();
+          Display.display();
+          noTone(buzzer);
+        while(true);
+      }
       }
     }
 
